@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/acb7dd7b7d.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> 
+
+  <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li><a class="nav-link" href="#welcome-section">Home</a></li>
+      <li><a class="nav-link" href="#projects">Work</a></li>
+      <li><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="main">
+    <section id="welcome-section">
+      <div id="intro-message">
+        <h1><span class="line">Hi, I'm <b>Ozan</b></span></h1>
+        <h1><span class="line">I’m a&nbsp;Developer and Musican</span></h1>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <div class="project-tile project-bg01">
+        <div class="container  project-flex">
+          <div class="project-text">
+            <h3 class="project-title">Tribute Page</h3>
+            <div class="card-title">Technologies used</div>
+            <hr>
+            <div class="languages_used">
+              <div class="html-language">
+                <p>HTML</p><i class="fab fa-html5 fa-2x"></i>
+              </div>
+              <div class="css-language">
+                <p>CSS</p><i class="fab fa-css3-alt fa-2x"></i>
+              </div>
+            </div>
+            <a href="https://codepen.io/digituar/full/GRJboav" target="_blank" class="button3">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-tile project-bg02">
+        <div class="container  project-flex">
+          <div class="project-text">
+            <h3 class="project-title">Product Landing</h3>
+            <div class="card-title">Technologies used</div>
+            <hr>
+            <div class="languages_used">
+              <div class="html-language">
+                <p>HTML</p><i class="fab fa-html5 fa-2x"></i>
+              </div>
+              <div class="css-language">
+                <p>CSS</p><i class="fab fa-css3-alt fa-2x"></i>
+              </div>
+            </div>
+            <a href="https://codepen.io/digituar/full/ZEbazZp" target="_blank" class="button3">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-tile project-bg03">
+        <div class="container project-flex">
+          <div class="project-text">
+            <h3 class="project-title">Survey Form</h3>
+            <div class="card-title">Technologies used</div>
+            <hr>
+            <div class="languages_used">
+              <div class="html-language">
+                <p>HTML</p><i class="fab fa-html5 fa-2x"></i>
+              </div>
+              <div class="css-language">
+                <p>CSS</p><i class="fab fa-css3-alt fa-2x"></i>
+              </div>
+            </div>
+            <a href="https://codepen.io/digituar/full/gOaMXVa" target="_blank" class="button3">View</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-tile project-bg04">
+        <div class="container project-flex">
+          <div class="project-text">
+            <h3 class="project-title">Technical Documentation</h3>
+            <div class="card-title">Technologies used</div>
+            <hr>
+            <div class="languages_used">
+              <div class="html-language">
+                <p>HTML</p><i class="fab fa-html5 fa-2x"></i>
+              </div>
+              <div class="css-language">
+                <p>CSS</p><i class="fab fa-css3-alt fa-2x"></i>
+              </div>
+            </div>
+            <a href="https://codepen.io/digituar/full/NWGzgwM" target="_blank" class="button3">View</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <div class="container-contact">
+        <div class="contact-Area">
+          <form class="contact-form">
+            <span class="contact-form-title">
+              Let's work together...
+            </span>
+            <label class="label-input" for="first-name">Your name *</label>
+            <div class="wrap-input100" data-validate="Type first name">
+              <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+              <span class="focus-input100"></span>
+            </div>
+            <div class="wrap-input100" data-validate="Type last name">
+              <input class="input100" type="text" name="last-name" placeholder="Last name">
+              <span class="focus-input100"></span>
+            </div>    
+            <label class="label-input" for="email">Enter your email *</label>
+            <div class="wrap-input100" data-validate = "Valid email is required: ex@abc.xyz">
+              <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+              <span class="focus-input100"></span>
+            </div>    
+            <label class="label-input" for="message">Message *</label>
+            <div class="wrap-input100" data-validate = "Message is required">
+              <textarea id="message" class="input100" name="message" placeholder="Write me a message"></textarea>
+              <span class="focus-input100"></span>
+            </div>    
+            <div class="container-contact-form-btn">
+              <button type="submit" id="submit" class="contact-form-btn">
+                Send Message
+              </button>
+            </div>
+          </form> 
+          <div class="contact-right">
+            <ul>
+              <li class='highlight'>
+                <a class="fa-stack fa-1x" title="Email" href="mailto:xyz@mail.com">
+                  <i class="fas fa-square fa-stack-2x"></i>
+                  <i class="fa fa-envelope fa-stack-1x blacktext"></i><span class="contactItem">E-Mail</span>
+                </a>
+              </li>
+              <li class='highlight'>
+                <a id="profile-link" class="fa-stack fa-1x" title="FreeCodeCamp" href="https://www.freecodecamp.com/digituar" target="_blank">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-fire fa-stack-1x blacktext"></i><span class="contactItem">Freecodecamp</span>
+                </a>
+              </li>
+              <li class='highlight'>
+                <a class="fa-stack fa-1x" title="Twitter" href="https://twitter.com/digituar" target="_blank">
+                  <i class="fa fa-twitter-square fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x blacktext"></i><span class="contactItem">Twitter</span>
+                </a>
+              </li>      
+              <li class='highlight'>
+                <a class="fa-stack fa-1x" title="GitHub" href="https://github.com/digituar" target="_blank">
+                  <i class="fa fa-github-square fa-stack-2x"></i><span class="contactItem">Twitter</span>
+                </a>
+              </li>      
+              <li class='highlight'>
+                <a class="fa-stack fa-1x" title="CodePen" href="https://codepen.io/digituar/" target="_blank">
+                  <i class="fa fa-square fa-stack-2x"></i>
+                  <i class="fa fa-codepen fa-stack-1x blacktext"></i><span class="contactItem">CodePen</span>
+                </a>
+              </li>
+              <li class='highlight'>
+                <a class="fa-stack fa-1x" title="Facebook" href="https://www.facebook.com/freecodecamp" target="_blank">
+                  <i class="fa fa-facebook-square fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x blacktext"></i><span class="contactItem">Facebook</span>
+                </a>
+              </li>      
+              <li class='highlight'>
+                <a class="fa-stack fa-1x" title="Google+" href="https://plus.google.com/" target="_blank">
+                  <i class="fa fa-google-plus-square fa-stack-2x"></i><span class="contactItem">Google</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>      
+      </div>
+    </section>
+    <footer>
+      <div class="text-center copyright">
+        <span>Copyright 2020, DIGITUAR</span>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>

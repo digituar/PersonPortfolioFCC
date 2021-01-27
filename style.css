@@ -1,0 +1,435 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: white;
+  min-height: 50rem;
+}
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main#page-wrapper {
+  position: relative;
+}
+
+/*===============================[  NAVIGATION BAR ]===================================*/
+
+.nav {
+  display: flex;
+  position:fixed;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 1% 1%;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10;
+  left: 0;
+  background: #f2f2f2;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #051257;
+  padding: 0px 15px;
+}
+
+.nav-list a:hover {
+  color: #D68686;
+  border-bottom: 1px solid #74D1BA;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/*===============================[  WELCOME SECTION ]===================================*/
+
+#welcome-section{
+  height: 100vh;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(OA.jpg)no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#welcome-section h1{
+  font-size: 4em;
+  color: rgb(255, 255, 255);
+  margin-bottom: -30px;
+  font-family: 'Prata', serif;
+  text-shadow: 1px 1px 3px black ;
+}
+#welcome-section p{
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+  font-family: 'Prata', serif;
+  text-shadow: 1px 1px 3px black;
+  margin: 32px;
+}
+
+/*===============================[  PROJECT SECTION ]===================================*/
+
+.project-flex {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.project-text {
+  background-color: black;
+  color: #ffffff;
+  padding: 50px;
+  margin-left: 150px;
+}
+.project-title {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.project-bg01 {
+  background-image: url("mk.jpg");
+}
+.project-bg02 {
+  background-image: url("PL.jpg");
+}
+.project-bg03 {
+  background-image: url("SF.jpg");
+}
+.project-bg04 {
+  background-image: url("TD.jpg");
+}
+
+
+.project-bg01,
+.project-bg02,
+.project-bg03,
+.project-bg04 {
+  width: 100%;
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*===============================[  CONTACT SECTION ]===================================*/
+
+.contactItem {
+  display: inline-block;
+  padding-right: 1.0em;
+  text-decoration: none;
+  white-space:nowrap
+}
+
+.blacktext {
+  color: black;
+}
+
+.highlight {
+  opacity: 0.6;    
+  margin-top: 10px;
+}
+
+.highlight span {    
+  margin-left: 50px;
+}
+
+.highlight:hover {
+  opacity: 1;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*text-align: center;*/
+  height: 100vh;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #f2f2f2;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* END CONTACT SECTION */
+
+
+#intro-message {
+  margin-left: 54px;
+  border-left: solid white 7px;
+  padding-left: 18px;
+  color: white;
+}
+
+#intro-message h1 {
+  width: 60vw;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+/*===============================[  PROGRAMMING LANGUAGE SECTION ]===================================*/
+
+.languages_used {
+  display: flex;
+}
+
+.css-language {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #6495ed;
+}
+
+.html-language {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffa500;
+}
+
+.banner-hr {
+  width: 60%;
+  max-width: 750px;
+  border: 1px solid white;
+}
+hr {
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
+  border: 0;
+  border-top: 1px solid rgba(0,0,0,.1);
+  width: 100%;  
+  height: 2px;  
+  background-color: #ffffff; 
+}
+
+/*===============================[  BUTTON THREE ]===================================*/
+
+a.button3:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+a.button3 {
+  display: inline-block;
+  padding: 0.5em 2.0em;
+  margin: 1.0em 0.5em 0.3em 0;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  border: #ffffff solid 2px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+/*===============================[ CONTACT NEW FORM ]===================================*/
+/*------------------------------[ Contact form Button ]-------------------------------*/
+
+.container-contact-form-btn {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.contact-form-btn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  border: #000000 solid 2px;
+}
+.contact-form-btn {
+  background-color: #000000;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 23px;
+  justify-content: center;
+  display: inline-block;
+  padding: 1.0em 2.0em 1.0em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: #ffffff;
+  border: #ffffff solid 2px;
+  text-align: center;
+  transition: all 0.2s;
+}
+
+.contact-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 56px 55px 63px 55px;
+}
+
+.contact-form-title {
+  width: 100%;
+  display: block;
+  font-size: 30px;
+  font-family: Poppins-Regular;
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 33px;
+}
+
+.input100 {
+  height: 55px;
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.2;
+  padding: 0 25px;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  outline: 0;
+  border: 1px solid #593838;
+}
+
+textarea.input100 {
+  min-height: 139px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.2;
+  padding: 0 25px;
+}
+
+
+.label-input {
+  font-size: 12px;
+  color: #555555;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 55px;
+  border: 1px solid #e6e6e6;
+  border-bottom: none;
+  padding: 10px 25px;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.wrap-input100, textarea {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+}
+
+
+.contact-Area {
+  width: 1120px;
+  background: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+
+.contact-right {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: white;    
+}
+
+
+.contact-right ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 120px 20px 0px;
+}
+
+.contact-right ul li a {
+  float: left;
+  color: white !important;
+}
+
+@media (max-width: 1070px) {
+  .contact-Area {    
+	   flex-direction: column;
+	   align-items: center;
+     padding: 50px;
+  }
+  .contact-Area .contact-Area:first-child {    
+    margin-bottom: 25px;
+  }
+}
+
+/*============================[ FOOTER ]======================================*/
+footer {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1% 5%;
+  text-align: center;
+  color: #000000;
+  background-color: #f2f2f2;
+  opacity: 1;
+  z-index: 100;
+}
