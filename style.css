@@ -33,6 +33,7 @@ main#page-wrapper {
 .nav-list {
   display: flex;
   margin-right: 2rem;
+  list-style-type: none;
 }
 
 .nav-list a {
@@ -46,7 +47,7 @@ main#page-wrapper {
 
 .nav-list a:hover {
   color: #D68686;
-  border-bottom: 1px solid #74D1BA;
+  /*border-bottom: 1px solid #74D1BA;*/
 }
 
 .nav-link {
@@ -127,48 +128,6 @@ main#page-wrapper {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
-/*===============================[  CONTACT SECTION ]===================================*/
-
-.contactItem {
-  display: inline-block;
-  padding-right: 1.0em;
-  text-decoration: none;
-  white-space:nowrap
-}
-
-.blacktext {
-  color: black;
-}
-
-.highlight {
-  opacity: 0.6;    
-  margin-top: 10px;
-}
-
-.highlight span {    
-  margin-left: 50px;
-}
-
-.highlight:hover {
-  opacity: 1;
-}
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /*text-align: center;*/
-  height: 100vh;
-  height: 80vh;
-  padding: 0 2rem;
-  background: #f2f2f2;
-  height: 100vh;
-  background-size: cover;
-  background-attachment: fixed;
-}
-/* END CONTACT SECTION */
 
 
 #intro-message {
@@ -409,6 +368,48 @@ textarea.input100 {
   color: white !important;
 }
 
+/*===============================[  CONTACT SECTION ]===================================*/
+
+.contactItem {
+  display: inline-block;
+  padding-right: 1.0em;
+  text-decoration: none;
+  white-space:nowrap
+}
+
+.blacktext {
+  color: black;
+}
+
+.highlight {
+  opacity: 0.6;    
+  margin-top: 10px;
+}
+
+.highlight span {    
+  margin-left: 50px;
+}
+
+.highlight:hover {
+  opacity: 1;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*text-align: center;*/
+  height: 100vh;
+  height: 80vh;
+  padding: 0 2rem;
+  background: #f2f2f2;
+  height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+}
+/* END CONTACT SECTION */
+
 @media (max-width: 1070px) {
   .contact-Area {    
 	   flex-direction: column;
@@ -417,6 +418,24 @@ textarea.input100 {
   }
   .contact-Area .contact-Area:first-child {    
     margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    flex-direction: column;
+  }
+  intro-message {
+    font-size: 90px;
+  }
+  .project-flex {
+    justify-content: center;
+  }
+  .project-text {
+    width: 100%;
+  }
+  .welcome-section {
+    width: 100%;
   }
 }
 
