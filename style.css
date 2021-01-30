@@ -60,7 +60,7 @@ main#page-wrapper {
 
 #welcome-section{
   height: 100vh;
-  background: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(OA.jpg)no-repeat center;
+  background: linear-gradient(to bottom,rgba(0,0,0,0.5), rgba(0,0,0,0.8)),url(oa.jpg)no-repeat center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -82,6 +82,10 @@ main#page-wrapper {
   font-family: 'Prata', serif;
   text-shadow: 1px 1px 3px black;
   margin: 32px;
+}
+
+.container {
+  display: grid;
 }
 
 /*===============================[  PROJECT SECTION ]===================================*/
@@ -107,15 +111,14 @@ main#page-wrapper {
   background-image: url("mk.jpg");
 }
 .project-bg02 {
-  background-image: url("PL.jpg");
+  background-image: url("pl.jpg");
 }
 .project-bg03 {
-  background-image: url("SF.jpg");
+  background-image: url("sf.jpg");
 }
 .project-bg04 {
-  background-image: url("TD.jpg");
+  background-image: url("td.jpg");
 }
-
 
 .project-bg01,
 .project-bg02,
@@ -128,7 +131,6 @@ main#page-wrapper {
   background-repeat: no-repeat;
   background-size: contain;
 }
-
 
 #intro-message {
   margin-left: 54px;
@@ -178,6 +180,7 @@ main#page-wrapper {
   max-width: 750px;
   border: 1px solid white;
 }
+
 hr {
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
@@ -194,6 +197,7 @@ a.button3:hover {
   background-color: #ffffff;
   color: #000000;
 }
+
 a.button3 {
   display: inline-block;
   padding: 0.5em 2.0em;
@@ -222,6 +226,7 @@ a.button3 {
   color: #000000;
   border: #000000 solid 2px;
 }
+
 .contact-form-btn {
   background-color: #000000;
   display: -webkit-box;
@@ -250,7 +255,6 @@ a.button3 {
   display: -webkit-flex;
   display: -moz-box;
   display: -ms-flexbox;
-  display: flex;
   flex-wrap: wrap;
   padding: 56px 55px 63px 55px;
 }
@@ -305,7 +309,6 @@ textarea.input100 {
   padding: 0 25px;
 }
 
-
 .label-input {
   font-size: 12px;
   color: #555555;
@@ -332,7 +335,6 @@ textarea.input100 {
   border: 1px solid #e6e6e6;
 }
 
-
 .contact-Area {
   width: 1120px;
   background: #fff;
@@ -345,7 +347,6 @@ textarea.input100 {
   align-items: stretch;
 }
 
-
 .contact-right {
   width: 50%;
   display: flex;
@@ -354,7 +355,6 @@ textarea.input100 {
   background: #000000;
   color: white;    
 }
-
 
 .contact-right ul li {
   display: flex;
@@ -399,7 +399,6 @@ textarea.input100 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*text-align: center;*/
   height: 100vh;
   height: 80vh;
   padding: 0 2rem;
@@ -411,30 +410,33 @@ textarea.input100 {
 /* END CONTACT SECTION */
 
 @media (max-width: 1070px) {
-  .contact-Area {    
-	   flex-direction: column;
-	   align-items: center;
-     padding: 50px;
+  .contact-right ul {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
-  .contact-Area .contact-Area:first-child {    
-    margin-bottom: 25px;
-  }
+
+  .contact-Area,
+  footer {    
+    flex-direction: column;
+    align-items: center;
+ }
 }
 
 @media only screen and (max-width: 500px) {
-  .nav {
-    flex-direction: column;
+  .nav-list {
+    display: flex;
+    justify-content: space-around;
   }
   intro-message {
     font-size: 90px;
   }
   .project-flex {
     justify-content: center;
+    padding-bottom: 1rem;
   }
+  .welcome-section
+  .contact-section
   .project-text {
-    width: 100%;
-  }
-  .welcome-section {
     width: 100%;
   }
 }
